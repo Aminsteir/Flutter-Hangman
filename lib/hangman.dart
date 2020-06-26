@@ -144,8 +144,11 @@ class _HangmanState extends State<Hangman> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            Wrap(
+              alignment: WrapAlignment.spaceEvenly,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 10,
+              runSpacing: 20,
               children: <Widget>[
                 Container(
                   width: 100,
@@ -155,7 +158,7 @@ class _HangmanState extends State<Hangman> {
                   ),
                 ),
                 Container(
-                  child: Row(
+                  child: Wrap(
                       children: _currentWord.codeUnits.map((int charInt) {
                     if (_calledLetters.contains(charInt))
                       return Text(
