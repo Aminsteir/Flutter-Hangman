@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hangman_flutter/hangman.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'hangman.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,29 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hangman',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
+        textTheme: GoogleFonts.kavoonTextTheme(
+          Theme.of(context).textTheme,
+        ).apply(
+          bodyColor: Colors.white,
+        ),
       ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  @override
-  _HomePage createState() => _HomePage();
-}
-
-class _HomePage extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Hangman'),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        child: Hangman(),
-      ),
+      home: Hangman(),
     );
   }
 }
