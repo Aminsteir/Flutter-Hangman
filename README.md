@@ -5,9 +5,9 @@ A Hangman game written in Dart with Flutter framework. You have 2 hints and 5 li
 
 ## Screenshots
 
-<img align="center" width="350" src="./images/promo/pre1.png">
-<img align="center" width="350" src="./images/promo/pre2.png">
-<img align="center" width="350"  src="./images/promo/pre3.png">
+<img align="center" width="350" src="./images/promo/pre1.jpeg">
+<img align="center" width="350" src="./images/promo/pre2.jpeg">
+<img align="center" width="350"  src="./images/promo/pre3.jpeg">
 
 App screenshots created with <a href="https://previewed.app/">Previewed</a>
 
